@@ -10,6 +10,7 @@ import jakarta.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
 import paqueteLogica_clases.Usuario;
+import paqueteLogica_clases.conexiondb;
 
 @WebServlet(name = "SvUsuarios", urlPatterns = {"/SvUsuarios"})
 public class SvUsuarios extends HttpServlet {
@@ -42,6 +43,9 @@ public class SvUsuarios extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        conexiondb db = new conexiondb();
+        db.conectardb();
         
         String cedula = request.getParameter("cedula");
         String nombre = request.getParameter("nombre");

@@ -21,6 +21,7 @@
             <p><b>Usuario <%=contador%>: </b></p>
             <p>Nombre:<%=u.getNombre()%> </p>
             <p>Apellido:<%=u.getApellido()%> </p>
+            <p>Cedula:<%=u.getCedula()%> </p>
             <p>Correo electronico:<%=u.getMail()%></p>
             <p>Telefono:<%=u.getTelefono()%> </p>
             <br>
