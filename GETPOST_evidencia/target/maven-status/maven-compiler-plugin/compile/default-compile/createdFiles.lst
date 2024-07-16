@@ -1,0 +1,4 @@
+com\mycompany\getpost_evidencia\JakartaRestConfiguration.class
+getpost_evidencia\servlets\SvUsuarios.class
+com\mycompany\getpost_evidencia\resources\JakartaEE10Resource.class
+paqueteLogica_clases\Usuario.class
